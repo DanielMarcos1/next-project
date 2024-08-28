@@ -94,11 +94,3 @@ body {
 .group {
   position: relative;
 }
-
-@layer components {
-  .login-container {
-    width: 600px;
-    height: 600px;
-    padding: 2rem;
-  }
-}

@@ -17,12 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-          <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-indigo-50/50 pointer-events-none"></div>
-            <div className="relative">
-              {children}
-            </div>
+        <div className="min-h-screen bg-gray-100">
+          <div className="container mx-auto px-4">
+            {children}
           </div>
         </div>
       </body>
