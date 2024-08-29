@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="login-container bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+      <div className="login-container bg-[#FAF9F9] p-8 rounded-lg shadow-[0px_4px_4px_0px_#00000040] w-full max-w-[600px]">
         <div className="login-gradient"></div>
         <div className="login-content">
           <div className="login-header flex flex-col items-center">
@@ -23,11 +23,11 @@ export default function Home() {
               <Image
                 src="/vercel.svg"
                 alt="Logo"
-                width={100}
-                height={24}
+                width={150}
+                height={36}
               />
             </div>
-            <h2 className="login-title text-center text-2xl mb-6">
+            <h2 className="login-title text-center text-3xl mb-8">
               Digitaliza
             </h2>
           </div>
@@ -43,7 +43,7 @@ export default function Home() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="input-field py-3 w-full"
+                  className="input-field w-full py-2 px-3 text-sm"
                   placeholder="E-mail"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -59,7 +59,7 @@ export default function Home() {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="input-field py-3 w-full"
+                  className="input-field w-full py-2 px-3 text-sm"
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between mb-6">
               <div className="flex items-center">
                 <input
                   id="remember-me"
@@ -75,7 +75,7 @@ export default function Home() {
                   type="checkbox"
                   className="remember-me"
                 />
-                <label htmlFor="remember-me" className="remember-me-label ml-2">
+                <label htmlFor="remember-me" className="remember-me-label ml-3 text-sm">
                   Remember me
                 </label>
               </div>
@@ -87,12 +87,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
+            <div className="flex justify-center">
               <button
                 type="submit"
-                className="submit-button"
+                className="submit-button w-1/2 py-3 text-sm bg-[#294095] text-white hover:bg-[#3a5bc7] transition-colors duration-300"
               >
-                Sign in
+                Entrar
               </button>
             </div>
           </form>
